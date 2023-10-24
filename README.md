@@ -21,3 +21,9 @@ apt update
 apt upgrade
 nix-env -iA nixpkgs.git
 ```
+## LXC export and publish 
+```bash
+lxc stop image
+lxc publish image --alias new-name
+lxc image export new-name PATH
+```
