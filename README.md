@@ -15,7 +15,9 @@ nameserver 8.8.8.8
 nameserver 8.8.4.4
 ```
 
-## Update GIT
+## Update Nix
 ```bash
+apt update
+apt upgrade
 nix-env -iA nixpkgs.git
 ```
