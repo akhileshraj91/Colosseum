@@ -4,6 +4,7 @@ SMARTCOMP
 ## LXC launch commands
 ```bash
 lxc image import ./base-1604-cuda.tar.gz --alias my-base-image
+lxc init local:my-base-image my-custom-container
 lxc launch my-base-image 
 ```
 
