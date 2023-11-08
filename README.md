@@ -14,6 +14,7 @@ lxc launch my-base-image
 ## LXC ensure networking
 ```bash
 lxc exec container_name -- /etc/init.d/networking restart
+lxc exec container_name /bin/bash
 cat /etc/resolv.conf
 nameserver 8.8.8.8
 nameserver 8.8.4.4
